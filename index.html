@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/styles.css">
-
     <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> -->
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>西安电子科技大学广州研究院先进制造技术创新中心</title>
 </head>
@@ -38,114 +45,182 @@
         </nav>
     </header>
 
-    <main class="l-main">
+    <main class='main'>
 
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">西安电子科技大学<br>广州研究院<br><span class="home__title-color">先进制造技术创新中心</span></h1>
-                <a href="join_us.html" class="button">Join Us</a>
-            </div>
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <!--========== ISLANDS 1 ==========-->
+                <section class="islands swiper-slide">
+                    <img src="assets/img/borabora.jpg" alt="" class="islands__bg">
 
-            <!-- 
-            <div class="home__social">
-                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-            </div> -->
+                    <div class="islands__container bd-container">
+                        <div class="islands__data">
 
-            <div class="home__img">
-                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <!-- <image class="home__blob-img" x="50" y="60" href="assets/img/home_1.png"/> -->
-                            <!-- <image class="home__blob-img" href="assets/img/home_1.png"/> -->
-                        </g>
-                    </svg>
-            </div>
-        </section>
+                            <h2 class="islands__title">西安电子科技大学</h2>
+                            <h2 class="islands__title">广州研究院</h2>
+                            <h2 class="islands__subtitle">先进制造技术创新中心</h2>
+                            <!-- <p class="islands__description">Small South Pacific island northwest of Tahiti in French Polynesia, surrounded by motus.</p> -->
+                            <!-- <a href="#" class="islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a> -->
+                        </div>
 
+                        <!-- <div class="islands__video">
+                            <div class="islands__video-content">
+                                <i class='bx bx-play-circle islands__video-icon'></i>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
 
-        <!--========== INTRODUCTION ==========-->
+                <!--========== ISLANDS 2 ==========-->
+                <section class="islands swiper-slide">
+                    <img src="assets/img/bali.jpg" alt="" class="islands__bg">
 
-        <section class="introduction section" id="introduction">
+                    <div class="islands__container bd-container">
+                        <div class="islands__data">
+                            <h2 class="islands__title">Battery-free IoT</h2>
+                            <!-- <h2 class="islands__title">广州研究院</h2> -->
+                            <!-- <h2 class="islands__subtitle">先进制造技术创新中心</h2> -->
+                            <p class="islands__description">It is an Indonesian island known and beautiful for its lush active volcanic mountains.</p>
+                            <!-- <a href="#" class="islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a> -->
+                        </div>
 
-            <div class="inroduction__container bd-grid">
-                <div class="introduction__content" id="left_frame">
-                    <p class="introduction__detail">西安电子科技大学广州研究院(以下简称“广研院”)是西安电子科技大学与广州市政府按照“高 起点定位、高标准规划、高质量运行”发展思路，携手共建的高层次、引领性、国际化的产学研融合 实体，是学校主动对接国家重大需求，抢抓粤港澳大湾区发展机遇，支撑地方经济跨越发展的关键举 措，旨在面向国家、区域和产业需求，勠力打造产教融合与人才汇聚的核心科技领域“湾区之星”。 “先进制造技术创新中心” 是广研院和深圳长城开发科技股份有限公司本着“优势互补、互惠 互利、扩大合作、共同发展”的原则，立足打造国际一流的先进制造技术研发平台和高层次人才培养
-                        基地，服务企业、学校、地方经济发展，共同搭建校企合作的创新范本。创新中心以先进制造技术研 发与应用为牵引，专注于推动智能制造、电子封装、人工智能、工业数字化与数字孪生、先进材料、 工业互联网、计算机软件等跨领域融合，探索国家自主可控先进制造技术研究发展、促进项目合作落 地、实践政产学研用科技成果转化。根据创新中心工作需要，现面向海内外招聘，欢迎优秀人才加入 “先进制造技术创新中心”! </p>
-                </div>
-                <div class="introduction__content" id="right_frame">
-                    <h2 class="introduction__title">Openings</h2>
-                    <p class="introduction__detail">根据创新中心工作需要，现面向海内外招聘，欢迎优秀人才加入 “先进制造技术创新中心”! </p>
-                    <!-- <a href="#" class="button block__button"> Openings</a> -->
-                </div>
-            </div>
-        </section>
+                        <!-- <div class="islands__video">
+                            <div class="islands__video-content">
+                                <i class='bx bx-play-circle islands__video-icon'></i>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
 
+                <!--========== ISLANDS 3 ==========-->
+                <section class="islands swiper-slide">
+                    <img src="assets/img/palawan.jpg" alt="" class="islands__bg">
 
-        <!--========== BLOCK ==========-->
-        <section class="block section" id="block">
-            <!-- <h2 class="section-title">Research</h2> -->
-            <div class="block__container bd-grid">
-                <div class="block__content">
-                    <img src="assets/img/work1.jpg" alt="" class="block__img">
-                    <h2 class="block__title">广研院组织召开“深科技-西电广研院先进制造技术创新中心”半年工作会及先进制造技术学术交流论坛</h2>
-                    <p class="block__date">2022-02-02</p>
-                    <!-- <span class="block__detail">Delicious dish</span> -->
-                    <a href="#" class="button block__button"> Read more</a>
-                </div>
-                <div class="block__content">
-                    <img src="assets/img/work2.jpg" alt="" class="block__img">
-                    <h2 class="block__title">广研院组织召开“深科技-西电广研院先进制造技术创新中心”半年工作会及先进制造技术学术交流论坛</h2>
-                    <p class="block__date">2022-02-02</p>
-                    <!-- <span class="block__detail">Delicious dish</span> -->
-                    <a href="#" class="button block__button"> Read more</a>
-                </div>
-                <div class="block__content">
-                    <img src="assets/img/work3.jpg" alt="" class="block__img">
-                    <h2 class="block__title">广研院组织召开“深科技-西电广研院先进制造技术创新中心”半年工作会及先进制造技术学术交流论坛</h2>
-                    <p class="block__date">2022-02-02</p>
-                    <!-- <span class="block__detail">Delicious dish</span> -->
-                    <a href="#" class="button block__button"> Read more</a>
-                </div>
-                <div class="block__content">
-                    <img src="assets/img/work4.jpg" alt="" class="block__img">
-                    <h2 class="block__title">广研院组织召开“深科技-西电广研院先进制造技术创新中心”半年工作会及先进制造技术学术交流论坛</h2>
-                    <p class="block__date">2022-02-02</p>
-                    <!-- <span class="block__detail">Delicious dish</span> -->
-                    <a href="#" class="button block__button"> Read more</a>
+                    <div class="islands__container bd-container">
+                        <div class="islands__data">
+                            <h2 class="islands__title">Kinetic Energy Harvesting</h2>
+                            <p class="islands__description">Also known as La Paragua, it is the largest island in the province of Palawan.</p>
+                            <!-- <a href="#" class="islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a> -->
+                        </div>
+
+                        <!-- <div class="islands__video">
+                            <div class="islands__video-content">
+                                <i class='bx bx-play-circle islands__video-icon'></i>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!--========== ISLANDS POPUP ==========-->
+                <div class="islands__popup" id="popup">
+                    <div>
+                        <div class="islands__popup-close" id="popup-close">
+                            <i class='bx bx-x'></i>
+                        </div>
+
+                        <iframe class="islands__popup-video" src="https://www.youtube.com/embed/JrU6bsuNU7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
+        </div>
+        <!--========== CONTROLS ==========-->
+        <div class="controls gallery-thumbs">
+            <div class="controls__container swiper-wrapper">
+                <img src="assets/img/borabora.jpg" alt="" class="controls__img swiper-slide">
+                <img src="assets/img/bali.jpg" alt="" class="controls__img swiper-slide">
+                <img src="assets/img/palawan.jpg" alt="" class="controls__img swiper-slide">
+            </div>
+        </div>
+    </main>
 
-        </section>
+
+
+    <!--========== INTRODUCTION ==========-->
+
+    <section class="introduction section" id="introduction">
+
+        <div class="inroduction__container bd-grid">
+            <div class="introduction__content" id="left_frame">
+                <p class="introduction__detail">西安电子科技大学广州研究院(以下简称“广研院”)是西安电子科技大学与广州市政府按照“高 起点定位、高标准规划、高质量运行”发展思路，携手共建的高层次、引领性、国际化的产学研融合 实体，是学校主动对接国家重大需求，抢抓粤港澳大湾区发展机遇，支撑地方经济跨越发展的关键举 措，旨在面向国家、区域和产业需求，勠力打造产教融合与人才汇聚的核心科技领域“湾区之星”。 “先进制造技术创新中心” 是广研院和深圳长城开发科技股份有限公司本着“优势互补、互惠 互利、扩大合作、共同发展”的原则，立足打造国际一流的先进制造技术研发平台和高层次人才培养
+                    基地，服务企业、学校、地方经济发展，共同搭建校企合作的创新范本。创新中心以先进制造技术研 发与应用为牵引，专注于推动智能制造、电子封装、人工智能、工业数字化与数字孪生、先进材料、 工业互联网、计算机软件等跨领域融合，探索国家自主可控先进制造技术研究发展、促进项目合作落 地、实践政产学研用科技成果转化。根据创新中心工作需要，现面向海内外招聘，欢迎优秀人才加入 “先进制造技术创新中心”! </p>
+            </div>
+            <div class="introduction__content" id="right_frame">
+                <h2 class="introduction__title">Openings</h2>
+                <p class="introduction__detail">根据创新中心工作需要，现面向海内外招聘，欢迎优秀人才加入 “先进制造技术创新中心”! </p>
+                <!-- <a href="#" class="button block__button"> Openings</a> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!--========== BLOCK ==========-->
+    <section class="block section" id="block">
+        <!-- <h2 class="section-title">Research</h2> -->
+        <div class="block__container bd-grid">
+            <div class="block__content">
+                <img src="assets/img/work1.jpg" alt="" class="block__img">
+                <h2 class="block__title">广研院组织召开“深科技-西电广研院先进制造技术创新中心”半年工作会及先进制造技术学术交流论坛</h2>
+                <p class="block__date">2022-02-02</p>
+                <!-- <span class="block__detail">Delicious dish</span> -->
+                <a href="#" class="button block__button"> Read more</a>
+            </div>
+            <div class="block__content">
+                <img src="assets/img/work2.jpg" alt="" class="block__img">
+                <h2 class="block__title">广研院组织召开“深科技-西电广研院先进制造技术创新中心”半年工作会及先进制造技术学术交流论坛</h2>
+                <p class="block__date">2022-02-02</p>
+                <!-- <span class="block__detail">Delicious dish</span> -->
+                <a href="#" class="button block__button"> Read more</a>
+            </div>
+            <div class="block__content">
+                <img src="assets/img/work3.jpg" alt="" class="block__img">
+                <h2 class="block__title">广研院组织召开“深科技-西电广研院先进制造技术创新中心”半年工作会及先进制造技术学术交流论坛</h2>
+                <p class="block__date">2022-02-02</p>
+                <!-- <span class="block__detail">Delicious dish</span> -->
+                <a href="#" class="button block__button"> Read more</a>
+            </div>
+            <div class="block__content">
+                <img src="assets/img/work4.jpg" alt="" class="block__img">
+                <h2 class="block__title">广研院组织召开“深科技-西电广研院先进制造技术创新中心”半年工作会及先进制造技术学术交流论坛</h2>
+                <p class="block__date">2022-02-02</p>
+                <!-- <span class="block__detail">Delicious dish</span> -->
+                <a href="#" class="button block__button"> Read more</a>
+            </div>
+        </div>
+
+    </section>
 
 
 
 
-        <!--===== FOOTER =====-->
-        <div>
-            <footer class="footer">
-                <!-- <p class="footer__title"></p>
+    <!--===== FOOTER =====-->
+    <div>
+        <footer class="footer">
+            <!-- <p class="footer__title"></p>
             <div class="footer__social">
                 <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div> -->
-                <p class="footer__copy">&#169; 西安电子科技大学广州研究院先进制造技术创新中心</p>
-            </footer>
-        </div>
+            <p class="footer__copy">&#169; 西安电子科技大学广州研究院先进制造技术创新中心</p>
+        </footer>
+    </div>
 
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+    <!--========== GSAP ==========-->
+    <script src="assets/js/gsap.min.js"></script>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== SWIPER JS ==========-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>
