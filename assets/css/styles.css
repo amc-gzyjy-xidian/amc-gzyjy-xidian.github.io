@@ -510,7 +510,7 @@ img {
     /* font-size: var(--big-font-size);
     margin-bottom: var(--mb-5); */
     position: relative;
-    font-size: var(--title-font-size);
+    font-size: var(--name-font-size);
     color: var(--first-color);
     /* margin-top: var(--mb-4); */
     margin-bottom: var(--mb-2);
@@ -519,7 +519,7 @@ img {
 
 .introduction__detail {
     font-size: var(--normal-font-size);
-    margin-bottom: var(--mb-1);
+    /* margin-bottom: var(--mb-1); */
 }
 
 
@@ -542,7 +542,7 @@ img {
 
 .research__title {
     position: relative;
-    font-size: var(--title-font-size);
+    font-size: var(--name-font-size);
     color: var(--first-color);
     /* margin-top: var(--mb-4); */
     margin-bottom: var(--mb-1);
@@ -847,7 +847,7 @@ img {
 /* ===== FOOTER =====*/
 
 .footer {
-    background-color: var(--first-color-lighter);
+    background-color: var(--first-color);
     color: var(--body-color);
     text-align: center;
     font-weight: var(--font-semi);
@@ -855,12 +855,14 @@ img {
     justify-content: center;
 }
 
-.footer__title {
-    font-size: 2rem;
-    margin-bottom: var(--mb-4);
+.footer__text {
+    /* font-size: 2rem; */
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-1);
 }
 
-.footer__social {
+
+/* .footer__social {
     margin-bottom: var(--mb-4);
 }
 
@@ -868,14 +870,11 @@ img {
     font-size: 1.5rem;
     color: var(--body-color);
     margin: 0 var(--mb-2);
-}
+} */
 
 .footer__copy {
     font-size: var(--smaller-font-size);
 }
-
-
-/* ===== MEDIA QUERIES=====*/
 
 
 /*========== MEDIA QUERIES ==========*/
