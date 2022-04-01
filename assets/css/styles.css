@@ -126,6 +126,10 @@ img {
 
 /*===== CLASS CSS ===== */
 
+.main {
+    overflow: hidden;
+}
+
 .section-title {
     position: relative;
     font-size: var(--h2-font-size);
@@ -143,6 +147,19 @@ img {
 
 
 /*===== LAYOUT =====*/
+
+
+/* .main {
+    overflow: hidden;
+} */
+
+.grid {
+    max-width: 1024px;
+    display: grid;
+    /* position: center; */
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
 
 .bd-grid {
     max-width: 1024px;
@@ -234,9 +251,6 @@ img {
     }
 }
 
-
-/*Active menu*/
-
 .active::after {
     position: absolute;
     content: '';
@@ -265,7 +279,7 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: var(--container-color);
+    /* background-color: var(--container-color); */
     border-radius: .5rem;
     box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
     padding: .75rem;
@@ -289,13 +303,58 @@ img {
 }
 
 
+/*========== RESEARCH BLOCK ==========*/
+
+.research__container {
+    row-gap: 4rem;
+    box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
+    padding: 2.5rem 1.5rem 2.5rem;
+    border-radius: .5rem;
+    margin-bottom: var(--mb-4);
+}
+
+.research__img {
+    width: 200px;
+    position: center;
+    /* justify-self: center; */
+}
+
+.research__title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    /* margin-top: var(--mb-4); */
+    margin-bottom: var(--mb-1);
+    /* text-align: left;
+    align-items: center; */
+}
+
+.research__detail {
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+    text-align: left;
+}
+
+.research__button {
+    margin-top: var(--mb-2);
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: .75rem 2.5rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    font-size: var(--small-font-size);
+    cursor: pointer;
+}
+
+
 /*========== BLOCK ==========*/
 
 .block__content {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: var(--container-color);
+    /* background-color: var(--white-color); */
     border-radius: .5rem;
     box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
     padding: .75rem;
@@ -611,56 +670,13 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.journal {
-    background-color: var(--frist-color);
-}
+
+/* .journal {
+    background-color: var(--first-color);
+} */
 
 .conference {
     background-color: var(--white-color);
-}
-
-
-/* ===== RESEARCH =====*/
-
-.research {
-    background-color: var(--white-color);
-}
-
-.research__container {
-    justify-items: center;
-    row-gap: 2rem;
-}
-
-.research__img {
-    position: relative;
-    overflow: hidden;
-}
-
-.research__img img {
-    border-radius: .5rem;
-}
-
-.research__link {
-    position: absolute;
-    bottom: -100%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, .3);
-    border-radius: .5rem;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
-    transition: .3s;
-}
-
-.research__img:hover .research__link {
-    bottom: 0;
-}
-
-.research__link-name {
-    color: var(--dark-color);
 }
 
 
@@ -854,11 +870,6 @@ img {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
     }
-    .research__container {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
     .contact__container {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
@@ -869,6 +880,10 @@ img {
 }
 
 @media screen and (min-width: 992px) {
+    .grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
@@ -917,7 +932,7 @@ img {
     .inroduction__container {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 4rem;
-        margin-top: var(--mb-6);
+        /* margin-top: var(--mb-6); */
     }
     #left_frame {
         width: 660px;
@@ -929,5 +944,16 @@ img {
         width: 300px;
         float: right;
         /* margin-top: -20px; */
+    }
+    .research__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        align-items: center;
+    }
+    .research__img {
+        width: 200px;
+    }
+    .research__detail {
+        width: 700px;
     }
 }
