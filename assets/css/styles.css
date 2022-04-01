@@ -58,6 +58,7 @@
     --mb-5: 2.5rem;
     --mb-6: 3rem;
     --mb-7: 5rem;
+    --mb-0: -6rem;
 }
 
 
@@ -134,22 +135,10 @@ img {
     text-align: center;
 }
 
-
-/* .section-title::after {
-    position: absolute;
-    content: '';
-    width: 64px;
-    height: 0.18rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 2rem;
-    background-color: var(--first-color);
-} */
-
 .section {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    /* margin: auto; */
 }
 
 
@@ -294,16 +283,15 @@ img {
     text-align: left;
 }
 
+.introduction__detail {
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+}
 
-/*========== MENU ==========*/
 
+/*========== BLOCK ==========*/
 
-/* .menu__container {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-} */
-
-.menu__content {
+.block__content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -314,40 +302,29 @@ img {
     margin-bottom: var(--mb-6);
 }
 
-.introduction__detail {
-    font-size: var(--normal-font-size);
-    margin-bottom: var(--mb-1);
-}
-
-.menu__img {
+.block__img {
     width: 100px;
     align-self: center;
     margin-bottom: var(--mb-6);
 }
 
-.menu__preci {
-    font-weight: var(--font-semi-bold);
-    color: var(--title-color);
-}
-
-.menu__name {
+.block__title {
     font-size: var(--normal-font-size);
-}
-
-.menu__preci {
-    font-size: var(--small-font-size);
-}
-
-.menu__detail {
     margin-bottom: var(--mb-1);
 }
 
-.menu__date {
-    font-size: var(--small-font-size);
+.block__detail {
+    font-size: var(--normal-font-size);
     margin-bottom: var(--mb-1);
 }
 
-.menu__button {
+.block__date {
+    font-size: var(--small-font-size);
+    /* margin-top: var(--mb-1); */
+    margin-bottom: var(--mb-1);
+}
+
+.block__button {
     display: block;
     background-color: var(--first-color);
     color: var(--white-color);
@@ -634,10 +611,9 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-
-/* .skills__text {
-    margin-bottom: var(--mb-4);
-} */
+.journal {
+    background-color: var(--frist-color);
+}
 
 .conference {
     background-color: var(--white-color);
@@ -685,27 +661,6 @@ img {
 
 .research__link-name {
     color: var(--dark-color);
-}
-
-
-/* ===== WORK =====*/
-
-.work__container {
-    row-gap: 2rem;
-}
-
-.work__img {
-    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-    border-radius: .5rem;
-    overflow: hidden;
-}
-
-.work__img img {
-    transition: 1s;
-}
-
-.work__img img:hover {
-    transform: scale(1.1);
 }
 
 
@@ -763,6 +718,7 @@ img {
     text-align: center;
     font-weight: var(--font-semi);
     padding: 2rem 0;
+    justify-content: center;
 }
 
 .footer__title {
@@ -919,7 +875,6 @@ img {
     }
     .faculty__container {
         grid-template-columns: repeat(2, 1fr);
-        /* grid-template-rows: repeat(1, 1fr); */
         column-gap: 2rem;
         align-items: center;
         text-align: initial;
@@ -934,7 +889,6 @@ img {
     } */
     .student__container {
         grid-template-columns: repeat(4, 1fr);
-        /* grid-template-rows: repeat(3, 1fr); */
         column-gap: 2rem;
         align-items: center;
         text-align: initial;
@@ -947,18 +901,15 @@ img {
     /* .student__img img {
         width: 165px;
     } */
-    /* .menu__container {
-        
-    } */
-    .menu__container {
+    .block__container {
         grid-template-columns: repeat(3, 300px);
         column-gap: 4rem;
-        margin-top: var(--mb-6);
+        margin-top: var(--mb-0);
     }
-    .menu__content {
+    .block__content {
         padding: 1.5rem;
     }
-    .menu__img {
+    .block__img {
         width: 200px;
         border-radius: 0.5rem;
         /* padding: 2rem; */
@@ -968,15 +919,11 @@ img {
         column-gap: 4rem;
         margin-top: var(--mb-6);
     }
-    /* .introduction__content {
-        grid-template-columns: repeat(2, 700px);
-        padding: 1.5rem;
-    } */
     #left_frame {
-        width: 650px;
+        width: 660px;
         float: left;
         /* margin-top: -20px; */
-        /* margin-left: 20px; */
+        /* margin-left: 40px; */
     }
     #right_frame {
         width: 300px;
