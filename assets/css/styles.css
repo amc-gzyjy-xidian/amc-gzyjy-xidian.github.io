@@ -630,7 +630,7 @@
         .staff__img {
             display: flex;
             justify-content: center;
-            padding-top: 1rem;
+            padding-top: .1rem;
             width: 150px;
             height: 150px;
             background-color: var(--first-color);
