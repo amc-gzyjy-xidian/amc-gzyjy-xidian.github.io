@@ -569,8 +569,7 @@
             justify-items: center;
             row-gap: 2rem;
         }
-        
-        .faculty__img {
+        /* .faculty__img {
             display: flex;
             justify-content: center;
             padding-top: 1rem;
@@ -579,6 +578,17 @@
             background-color: var(--first-color);
             border-radius: 50%;
             overflow: hidden;
+        } */
+        
+        .faculty__img {
+            width: 30%;
+            /* height: 40%; */
+            align-self: center;
+            /* padding-top: 1rem; */
+            border-radius: 10%;
+            overflow: hidden;
+            justify-content: center;
+            justify-content: center;
         }
         
         .faculty__subtitle {
