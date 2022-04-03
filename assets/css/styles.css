@@ -638,10 +638,6 @@
             overflow: hidden;
         }
         
-        .staff__detail {
-            margin-left: -4rem;
-        }
-        
         .staff__imgNoBackground {
             display: flex;
             justify-content: center;
@@ -650,6 +646,10 @@
             border-radius: 10%;
             overflow: hidden;
             margin-left: 1rem;
+        }
+        
+        .staff__detail {
+            margin-left: -4rem;
         }
         
         .staff__subtitle {
@@ -839,6 +839,81 @@
             .section {
                 padding-top: 2rem;
                 padding-bottom: 1rem;
+            }
+            .faculty__container {
+                align-items: center;
+                text-align: center;
+            }
+            .faculty__profession {
+                margin: auto;
+            }
+            .faculty__subtitle {
+                margin: auto;
+            }
+            .faculty__text {
+                text-align: left;
+                margin: auto;
+            }
+            .staff__container {
+                align-items: center;
+                text-align: center;
+            }
+            .staff__detail {
+                margin: auto;
+            }
+            .staff__img {
+                margin: auto;
+            }
+            .staff__imgNoBackground {
+                width: 100px;
+                margin: auto;
+            }
+            .student__img {
+                margin: auto;
+            }
+            .research__container {
+                align-items: center;
+                text-align: center;
+            }
+            .research__img {
+                margin: auto;
+            }
+            .research__title {
+                margin: auto;
+                text-align: center;
+            }
+            .news__container {
+                align-items: center;
+                text-align: center;
+            }
+            .news__img {
+                margin: auto;
+            }
+            .news__title {
+                margin: auto;
+                text-align: center;
+            }
+            .news__date {
+                text-align: center;
+            }
+            .block__container {
+                align-items: center;
+                text-align: center;
+            }
+            .block__date {
+                text-align: center;
+            }
+            .block__title {
+                text-align: center;
+            }
+            .block__detail {
+                text-align: left;
+            }
+            .block__img {
+                /* margin: auto; */
+            }
+            .button {
+                margin: auto;
             }
         }
         
