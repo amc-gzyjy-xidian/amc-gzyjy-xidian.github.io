@@ -569,33 +569,29 @@
             justify-items: center;
             row-gap: 2rem;
         }
-        /* .faculty__img {
+        
+        .faculty__img {
             display: flex;
             justify-content: center;
-            padding-top: 1rem;
+            padding-top: .3rem;
             width: 170px;
             height: 170px;
             background-color: var(--first-color);
             border-radius: 50%;
             overflow: hidden;
-        } */
+        }
         
-        .faculty__img {
+        .faculty__imgNoBackground {
             width: 30%;
-            /* height: 40%; */
-            align-self: center;
-            /* padding-top: 1rem; */
-            border-radius: 10%;
+            border-radius: 15%;
             overflow: hidden;
-            justify-content: center;
-            justify-content: center;
         }
         
         .faculty__subtitle {
             font-size: var(--big-font-size);
             color: var(--first-color);
             text-align: auto;
-            /* justify-items: initial; */
+            justify-items: initial;
         }
         
         .faculty__text {
@@ -618,7 +614,7 @@
         .faculty__social-icon:hover {
             color: var(--first-color);
         }
-        /* ===== FACULTY =====*/
+        /* ===== SRAFF=====*/
         
         .staff__container {
             justify-items: auto;
@@ -635,17 +631,31 @@
             display: flex;
             justify-content: center;
             padding-top: 1rem;
-            width: 170px;
-            height: 170px;
+            width: 150px;
+            height: 150px;
             background-color: var(--first-color);
             border-radius: 50%;
             overflow: hidden;
         }
         
+        .staff__detail {
+            margin-left: -4rem;
+        }
+        
+        .staff__imgNoBackground {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            width: 50%;
+            border-radius: 10%;
+            overflow: hidden;
+            margin-left: 1rem;
+        }
+        
         .staff__subtitle {
             font-size: var(--big-font-size);
             color: var(--first-color);
-            text-align: auto;
+            /* text-align: auto; */
             /* justify-items: initial; */
         }
         
@@ -685,6 +695,15 @@
         .student__img {
             display: flex;
             justify-content: center;
+            align-self: center;
+            width: 40%;
+            border-radius: 10%;
+            overflow: hidden;
+            margin-bottom: var(--mb-1);
+        }
+        /* .student__img {
+            display: flex;
+            justify-content: center;
             padding-top: 1rem;
             width: 170px;
             height: 170px;
@@ -692,7 +711,7 @@
             border-radius: 50%;
             overflow: hidden;
             margin-bottom: var(--mb-1);
-        }
+        } */
         
         .student__name {
             font-size: var(--big-font-size);
@@ -788,15 +807,16 @@
             font-size: var(--small-font-size);
             margin-bottom: var(--mb-1);
         }
-        /* .footer__social {
-    margin-bottom: var(--mb-4);
-}
-
-.footer__icon {
-    font-size: 1.5rem;
-    color: var(--body-color);
-    margin: 0 var(--mb-2);
-} */
+        
+        .footer__social {
+            margin-bottom: var(--mb-4);
+        }
+        
+        .footer__icon {
+            font-size: 1.5rem;
+            color: var(--body-color);
+            margin: 0 var(--mb-2);
+        }
         
         .footer__copy {
             font-size: var(--small-font-size);
@@ -907,12 +927,18 @@
             .staff__container {
                 grid-template-columns: repeat(4, 1fr);
                 /* margin-bottom: var(--mb-4); */
-                column-gap: 2rem;
+                column-gap: 4rem;
                 align-items: center;
                 text-align: initial;
                 text-justify: auto;
                 padding: 2rem 0;
             }
+            /* .staff__img {
+                width: 100px;
+            }
+            .staff__detail {
+                width: 300px;
+            } */
             .student__container {
                 grid-template-columns: repeat(4, 1fr);
                 column-gap: 2rem;
