@@ -665,14 +665,22 @@
         
         .student__container {
             justify-items: center;
-            row-gap: 2rem;
-            text-align: center;
+            /* row-gap: 2rem; */
+            /* text-align: center; */
         }
         
         .student__content {
             justify-items: center;
             text-align: center;
             align-items: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-radius: .5rem;
+            box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
+            padding: .75rem;
+            margin-top: var(--mb-7);
+            margin-bottom: var(--mb-6);
         }
         
         .student__img {
@@ -684,7 +692,6 @@
             background-color: var(--first-color);
             border-radius: 50%;
             overflow: hidden;
-            /* position: relative; */
             margin-bottom: var(--mb-1);
         }
         
@@ -693,24 +700,14 @@
             color: var(--first-color);
             text-align: center;
             align-items: center;
-            /* margin-bottom: var(--mb-1); */
         }
         
         .student__text {
-            font-size: var(--normal-font-size);
-            text-align: center;
-            align-items: center;
-            /* display: block; */
+            font-size: var(--small-font-size);
+            text-align: auto;
+            align-items: auto;
+            display: block;
             /* margin-bottom: var(--mb-4); */
-        }
-        
-        .student__social-icon {
-            font-size: 1.4rem;
-            margin: 0 var(--mb-1);
-        }
-        
-        .student__social-icon:hover {
-            color: var(--first-color);
         }
         /* =====  PUBLICATION =====*/
         
@@ -920,9 +917,9 @@
             .student__container {
                 grid-template-columns: repeat(4, 1fr);
                 column-gap: 2rem;
-                align-items: center;
+                /* align-items: center;
                 text-align: center;
-                padding: 2rem 0;
+                padding: 2rem 0; */
             }
             .block__container {
                 grid-template-columns: repeat(3, 300px);
