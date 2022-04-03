@@ -273,6 +273,27 @@
         .active-link {
             color: var(--first-color);
         }
+        /*=== BUTTONS ===*/
+        
+        .button {
+            display: inline-block;
+            background-color: var(--first-color);
+            color: var(--body-color);
+            padding: .5rem 1.2rem;
+            font-weight: var(--font-semi);
+            border-radius: .5rem;
+            transition: .3s;
+            margin-left: auto;
+            margin-top: auto;
+            border: none;
+            outline: none;
+            font-size: var(--small-font-size);
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+        }
         /*========== ISLANDS ==========*/
         
         .islands {
@@ -376,9 +397,10 @@
             cursor: pointer;
         }
         /* Show popup*/
-        /* .show-popup {
-    display: block;
-} */
+        
+        .show-popup {
+            display: block;
+        }
         /* Home Controls */
         
         .controls {
@@ -427,7 +449,7 @@
         
         .block__img {
             /* width: 80%; */
-            height: 40%;
+            height: 160px;
             align-self: center;
             border-radius: 0.5rem;
             margin-bottom: var(--mb-6);
@@ -451,18 +473,6 @@
             /* margin-top: - var(--mb-1); */
             margin-bottom: var(--mb-1);
         }
-        /* .block__button {
-            display: block;
-            background-color: var(--first-color);
-            color: var(--body-color);
-            padding: .75rem 2.5rem;
-            margin-left: auto;
-            border-radius: .5rem;
-            border: none;
-            outline: none;
-            font-size: var(--small-font-size);
-            cursor: pointer;
-        } */
         /*========== HOME INTRODUCTION BLOCK ==========*/
         
         .introduction__content {
@@ -552,27 +562,6 @@
         .news__date {
             font-size: var(--small-font-size);
             margin-bottom: var(--mb-1);
-        }
-        /*BUTTONS*/
-        
-        .button {
-            display: inline-block;
-            background-color: var(--first-color);
-            color: var(--body-color);
-            padding: .5rem 1.2rem;
-            font-weight: var(--font-semi);
-            border-radius: .5rem;
-            transition: .3s;
-            margin-left: auto;
-            margin-top: auto;
-            border: none;
-            outline: none;
-            font-size: var(--small-font-size);
-            cursor: pointer;
-        }
-        
-        .button:hover {
-            box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
         }
         /* ===== FACULTY =====*/
         
