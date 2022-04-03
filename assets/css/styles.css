@@ -573,7 +573,7 @@
         .faculty__img {
             display: flex;
             justify-content: center;
-            padding-top: .3rem;
+            padding-top: .8rem;
             width: 170px;
             height: 170px;
             background-color: var(--first-color);
