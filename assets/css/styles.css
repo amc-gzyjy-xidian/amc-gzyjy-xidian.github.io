@@ -148,16 +148,16 @@
         .grid {
             max-width: 1024px;
             display: grid;
-            /* position: center; */
+            position: center;
             margin-left: var(--mb-2);
             margin-right: var(--mb-2);
         }
         
         .bd-grid {
-            /* width: 100%; */
+            width: 100%;
             max-width: 1024px;
             display: grid;
-            /* align-items: center; */
+            align-items: center;
             margin-left: var(--mb-2);
             margin-right: var(--mb-2);
         }
@@ -174,7 +174,7 @@
         /*===== NAV =====*/
         
         .nav {
-            max-width: 968px;
+            /* max-width: 968px; */
             height: var(--header-height);
             display: flex;
             justify-content: space-between;
@@ -233,7 +233,7 @@
             cursor: pointer;
         }
         
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             .nav__menu {
                 position: fixed;
                 top: -110%;
@@ -285,6 +285,7 @@
             transition: .3s;
             margin-left: auto;
             margin-top: auto;
+            margin-bottom: auto;
             border: none;
             outline: none;
             font-size: var(--small-font-size);
@@ -448,10 +449,10 @@
         }
         
         .block__img {
-            /* width: 80%; */
-            height: 160px;
+            width: 100%;
+            /* height: 200px; */
             align-self: center;
-            border-radius: 0.5rem;
+            border-radius: .5rem;
             margin-bottom: var(--mb-6);
         }
         
@@ -459,7 +460,8 @@
             position: relative;
             font-size: var(--big-font-size);
             color: var(--first-color);
-            margin-bottom: var(--mb-2);
+            /* margin-bottom: var(--mb-1); */
+            /* margin-bottom: auto; */
             text-align: left;
         }
         
@@ -470,8 +472,8 @@
         
         .block__date {
             font-size: var(--small-font-size);
-            /* margin-top: - var(--mb-1); */
-            margin-bottom: var(--mb-1);
+            margin-top: var(--mb-1);
+            margin-bottom: var(--mb-2);
         }
         /*========== HOME INTRODUCTION BLOCK ==========*/
         
@@ -587,7 +589,7 @@
             overflow: hidden;
         }
         
-        .faculty__subtitle {
+        .faculty__title {
             font-size: var(--big-font-size);
             color: var(--first-color);
             text-align: auto;
@@ -652,7 +654,7 @@
             margin-left: -4rem;
         }
         
-        .staff__subtitle {
+        .staff__title {
             font-size: var(--big-font-size);
             color: var(--first-color);
             /* text-align: auto; */
@@ -699,7 +701,7 @@
             width: 40%;
             border-radius: 10%;
             overflow: hidden;
-            margin-bottom: var(--mb-1);
+            margin-bottom: var(--mb-2);
         }
         /* .student__img {
             display: flex;
@@ -714,18 +716,18 @@
         } */
         
         .student__name {
-            font-size: var(--big-font-size);
+            font-size: var(--normal-font-size);
             color: var(--first-color);
             text-align: center;
             align-items: center;
+            margin-top: var(--mb-1);
         }
         
-        .student__text {
+        .student__profession {
             font-size: var(--small-font-size);
             text-align: auto;
             align-items: auto;
             display: block;
-            /* margin-bottom: var(--mb-4); */
         }
         /* =====  PUBLICATION =====*/
         
@@ -847,11 +849,15 @@
             .faculty__profession {
                 margin: auto;
             }
-            .faculty__subtitle {
+            .faculty__title {
                 margin: auto;
             }
             .faculty__text {
                 text-align: left;
+                margin: auto;
+            }
+            .faculty__imgNoBackground {
+                width: 170px;
                 margin: auto;
             }
             .staff__container {
@@ -917,7 +923,7 @@
             }
         }
         
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 768px) {
             body {
                 margin: 0;
             }
@@ -1001,8 +1007,8 @@
             }
             .staff__container {
                 grid-template-columns: repeat(4, 1fr);
-                /* margin-bottom: var(--mb-4); */
-                column-gap: 4rem;
+                row-gap: 4rem;
+                column-gap: 1rem;
                 align-items: center;
                 text-align: initial;
                 text-justify: auto;
