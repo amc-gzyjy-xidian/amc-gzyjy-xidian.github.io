@@ -101,6 +101,11 @@
             margin: 0;
         }
         
+        b {
+            font-weight: var(--font-semi);
+            color: var(--first-color-lighter);
+        }
+        
         ul {
             margin: 0;
             padding: 0;
@@ -132,6 +137,7 @@
             margin-top: var(--mb-4);
             margin-bottom: var(--mb-2);
             text-align: center;
+            font-weight: var(--font-semi);
         }
         /*===== LAYOUT =====*/
         
@@ -470,12 +476,14 @@
             margin-bottom: var(--mb-1);
             display: block;
             text-align: left;
+            font-weight: var(--font-semi);
         }
         
         .block__detail {
             font-size: var(--normal-font-size);
             margin-bottom: var(--mb-1);
             display: block;
+            font-weight: var(--font-semi);
         }
         
         .block__date {
@@ -538,6 +546,7 @@
             color: var(--first-color);
             margin-bottom: var(--mb-2);
             text-align: left;
+            font-weight: var(--font-semi);
         }
         
         .research__detail {
@@ -579,6 +588,7 @@
             font-size: var(--normal-font-size);
             color: var(--first-color);
             margin-bottom: var(--mb-1);
+            font-weight: var(--font-semi);
         }
         
         .news__date {
@@ -622,6 +632,7 @@
             color: var(--first-color);
             text-align: auto;
             justify-items: initial;
+            font-weight: var(--font-semi);
         }
         
         .faculty__profession {
@@ -690,6 +701,7 @@
         .staff__title {
             font-size: var(--big-font-size);
             color: var(--first-color);
+            font-weight: var(--font-semi);
             /* text-align: auto; */
             /* justify-items: initial; */
         }
@@ -775,6 +787,8 @@
         
         .publication__text {
             margin-bottom: var(--mb-1);
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-medium);
         }
         
         .publication__author {
