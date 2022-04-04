@@ -152,14 +152,6 @@
             gap: 1.5rem;
         }
         
-        .grid {
-            max-width: 1024px;
-            display: grid;
-            position: center;
-            margin-left: var(--mb-2);
-            margin-right: var(--mb-2);
-        }
-        
         .l-header {
             width: 100%;
             position: fixed;
@@ -563,8 +555,15 @@
             box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
             padding: 2.5rem 1.5rem 2.5rem;
             border-radius: .5rem;
-            margin-bottom: var(--mb-6);
+            margin-bottom: var(--mb-4);
             margin-top: var(--mb-6);
+        }
+        
+        .news__img {
+            width: 200px;
+            border-radius: .5rem;
+            position: relative;
+            justify-self: center;
         }
         
         .news__title {
@@ -574,21 +573,17 @@
             margin-bottom: var(--mb-1);
         }
         
-        .news__detail {
-            font-size: var(--normal-font-size);
-            margin-bottom: var(--mb-1);
-            text-align: left;
-        }
-        
-        .news__img {
-            width: 200px;
-            border-radius: .5rem;
-            justify-self: center;
-        }
-        
         .news__date {
             font-size: var(--small-font-size);
             margin-bottom: var(--mb-1);
+        }
+        
+        .news__detail {
+            font-size: var(--normal-font-size);
+            margin-top: auto;
+            margin-bottom: var(--mb-2);
+            text-align: left;
+            color: var(--dark-color);
         }
         /* ===== FACULTY =====*/
         
@@ -701,8 +696,6 @@
         
         .student__container {
             justify-items: center;
-            /* row-gap: 2rem; */
-            /* text-align: center; */
         }
         
         .student__content {
@@ -1044,13 +1037,16 @@
         }
         
         @media screen and (min-width: 992px) {
-            .grid {
-                margin-left: auto;
-                margin-right: auto;
-            }
             .bd-grid {
                 margin-left: auto;
                 margin-right: auto;
+            }
+            .block__container {
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 4rem;
+            }
+            .block__content {
+                padding: 1.5rem;
             }
             .faculty__container {
                 grid-template-columns: repeat(2, 1fr);
@@ -1069,25 +1065,11 @@
                 text-justify: auto;
                 padding: 2rem 0;
             }
-            /* .staff__img {
-                width: 100px;
-            }
-            .staff__detail {
-                width: 300px;
-            } */
             .student__container {
                 grid-template-columns: repeat(4, 1fr);
                 column-gap: 2rem;
             }
-            .block__container {
-                grid-template-columns: repeat(3, 1fr);
-                column-gap: 4rem;
-                /* margin-top: var(--mb-0); */
-            }
-            .block__content {
-                padding: 1.5rem;
-            }
-            .inroduction__container {
+            /* .inroduction__container {
                 grid-template-columns: repeat(2, 1fr);
                 column-gap: 4rem;
             }
@@ -1098,7 +1080,7 @@
             #right_frame {
                 width: 300px;
                 float: right;
-            }
+            } */
             .research__container {
                 grid-template-columns: repeat(2, 1fr);
                 column-gap: 4rem;
@@ -1113,9 +1095,15 @@
             }
             .news__container {
                 grid-template-columns: repeat(2, 1fr);
-                align-items: center;
                 column-gap: 4rem;
+                align-items: center;
                 text-align: initial;
+            }
+            .news__img {
+                width: 200px;
+            }
+            .news__detail {
+                width: 700px;
             }
         }
         
