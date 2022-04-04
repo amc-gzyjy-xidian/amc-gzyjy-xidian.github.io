@@ -720,10 +720,12 @@
             display: flex;
             justify-content: center;
             align-self: center;
-            width: 40%;
+            height: 50%;
+            /* width: 40%; */
             border-radius: 10%;
             overflow: hidden;
-            margin-bottom: var(--mb-2);
+            /* margin-bottom: var(--mb-2); */
+            margin-top: var(--mb-2);
         }
         /* .student__img {
             display: flex;
@@ -912,8 +914,9 @@
                 margin-right: auto;
             }
             .student__img {
-                width: 100px;
-                margin: auto;
+                /* width: 100px; */
+                height: 120px;
+                margin-top: var(--mb-2);
             }
             .research__img {
                 width: 300px;
