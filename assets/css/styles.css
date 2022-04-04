@@ -450,10 +450,19 @@
             display: flex;
             justify-content: center;
             align-self: center;
-            width: 100%;
+            height: 50%;
+            /* width: 100%; */
             border-radius: .5rem;
-            margin-bottom: auto;
+            margin-top: var(--mb-2);
+            /* margin-bottom: auto; */
         }
+        /* .student__img {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            border-radius: 10%;
+            overflow: hidden;
+        } */
         
         .block__title {
             font-size: var(--big-font-size);
@@ -771,8 +780,26 @@
         .publication__author {
             color: var(--first-color);
         }
+        /* =====  joinUS =====*/
         
-        ;
+        .joinUS__container {
+            text-align: left;
+            position: relative;
+            flex-direction: column;
+            border-radius: .5rem;
+            box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
+            padding: .75rem;
+        }
+        
+        .joinUS__text {
+            margin-left: var(--mb-1);
+            margin-right: var(--mb-1);
+            margin-bottom: auto;
+        }
+        
+        .joinUS__textStr {
+            color: var(--first-color);
+        }
         /* ===== CONTACT =====*/
         
         .contact__container {
@@ -930,7 +957,7 @@
             .news__img {
                 width: 300px;
                 margin: auto;
-                margin-bottom: 2rem;
+                margin-bottom: var(--mb-2);
             }
             .news__title {
                 margin: auto;
@@ -949,8 +976,9 @@
                 text-align: left;
             }
             .block__img {
-                width: 300px;
-                margin-bottom: 2rem;
+                /* width: 300px; */
+                height: 170px;
+                margin-bottom: var(--mb-3);
             }
             .button {
                 margin: auto;
