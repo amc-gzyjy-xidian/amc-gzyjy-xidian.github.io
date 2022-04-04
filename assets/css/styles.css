@@ -448,8 +448,8 @@
             border-radius: .5rem;
             box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
             padding: .75rem;
-            margin-top: var(--mb-7);
-            margin-bottom: var(--mb-6);
+            margin-top: var(--mb-2);
+            margin-bottom: var(--mb-2);
         }
         
         .block__img {
