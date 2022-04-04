@@ -141,19 +141,15 @@
         
         .bd-container {
             max-width: 960px;
-            width: calc(100% - 2rem);
+            /* width: calc(100% - 2rem); */
             margin-left: var(--mb-2);
             margin-right: var(--mb-2);
         }
         
         .bd-grid {
-            /* width: 100%; */
             max-width: 1024px;
             display: grid;
             gap: 1.5rem;
-            /* align-items: center; */
-            /* margin-left: var(--mb-2); */
-            /* margin-right: var(--mb-2); */
         }
         
         .grid {
@@ -464,7 +460,7 @@
             align-self: center;
             width: 100%;
             border-radius: .5rem;
-            margin-bottom: var(--mb-5);
+            margin-bottom: auto;
         }
         
         .block__title {
@@ -860,6 +856,11 @@
                 margin-left: 1rem;
                 margin-right: 1rem;
             }
+            .bd-grid {
+                /* width: calc(100% - 2rem); */
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
             .controls__container {
                 column-gap: .25rem;
             }
@@ -871,10 +872,10 @@
                 padding-top: 2rem;
                 padding-bottom: 1rem;
             }
-            /* .faculty__container {
-                align-items: center;
+            .faculty__container {
+                /* align-items: center; */
                 text-align: center;
-            } */
+            }
             .faculty__profession {
                 margin: auto;
             }
@@ -889,10 +890,10 @@
                 width: 170px;
                 margin: auto;
             }
-            /* .staff__container {
-                align-items: center;
+            .staff__container {
+                /* align-items: center; */
                 text-align: center;
-            } */
+            }
             .staff__detail {
                 margin: auto;
             }
@@ -903,7 +904,11 @@
                 width: 100px;
                 margin: auto;
             }
+            .student__container {
+                grid-template-columns: repeat(2, 1fr);
+            }
             .student__img {
+                width: 100px;
                 margin: auto;
             }
             /* .research__container {
@@ -911,6 +916,8 @@
                 text-align: center;
             } */
             .research__img {
+                width: 300px;
+                margin-bottom: 2rem;
                 margin: auto;
             }
             .research__title {
@@ -922,8 +929,9 @@
                 text-align: center;
             } */
             .news__img {
+                width: 300px;
                 margin: auto;
-                width: 200px;
+                margin-bottom: 2rem;
             }
             .news__title {
                 margin: auto;
@@ -932,10 +940,6 @@
             .news__date {
                 text-align: center;
             }
-            /* .block__container {
-                align-items: center;
-                text-align: center;
-            } */
             .block__date {
                 text-align: center;
             }
@@ -946,7 +950,8 @@
                 text-align: left;
             }
             .block__img {
-                /* margin: auto; */
+                width: 300px;
+                margin-bottom: 2rem;
             }
             .button {
                 margin: auto;
@@ -956,6 +961,15 @@
         @media screen and (min-width: 768px) {
             body {
                 margin: 0;
+            }
+            .bd-container {
+                margin-left: var(--mb-2);
+                margin-right: var(--mb-2);
+            }
+            .bd-grid {
+                width: calc(100% - 2rem);
+                margin-left: var(--mb-2);
+                margin-right: var(--mb-2);
             }
             .section {
                 padding-top: 4rem;
@@ -1015,6 +1029,11 @@
             .swiper-slide-thumb-active {
                 width: 55px;
                 height: 55px;
+            }
+            .block__container {
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 2rem;
+                /* column-gap: 2rem; */
             }
         }
         
