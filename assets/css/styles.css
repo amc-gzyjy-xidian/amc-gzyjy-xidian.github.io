@@ -527,7 +527,7 @@
             position: relative;
             font-size: var(--big-font-size);
             color: var(--first-color);
-            margin-bottom: var(--mb-1);
+            margin-bottom: var(--mb-2);
             text-align: left;
         }
         
@@ -924,7 +924,7 @@
                 margin: auto;
             }
             .research__title {
-                margin: auto;
+                /* margin: auto; */
                 text-align: center;
             }
             .news__img {
