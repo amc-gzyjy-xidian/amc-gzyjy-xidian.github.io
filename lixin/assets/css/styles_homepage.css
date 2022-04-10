@@ -502,21 +502,23 @@ img {
 /*========== BLOCK 2 ==========*/
 
 .blockRow__container {
-    row-gap: 4rem;
+    row-gap: 2rem;
     box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
     padding: 2.5rem 1.5rem 2.5rem;
     border-radius: .5rem;
     margin-bottom: var(--mb-2);
     /* margin-top: var(--mb-1); */
+    /* <hr size="1px" color="#eee"> */
 }
 
 .blockRow__img {
     display: flex;
     justify-content: center;
     align-self: left;
-    /* height: 50%; */
-    width: 40%;
+    width: 80%;
     border-radius: .5rem;
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
 }
 
 .blockRow__detail {
@@ -539,6 +541,7 @@ img {
 .blockRow__subtitle {
     font-size: var(--normal-font-size);
     color: var(--dark-color);
+    margin-top: -.5rem;
     margin-bottom: var(--mb-1);
     display: block;
     text-align: left;
@@ -741,14 +744,22 @@ img {
         grid-template-columns: repeat(2, max-content);
         justify-content: center;
         align-items: center;
-        column-gap: 3rem;
-        padding: 3rem 0;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
     .blockRow__img {
+        /* align-items: left; */
         width: 200px;
     }
     .blockRow__detail {
-        width: 700px;
+        width: 777px;
+    }
+    .blockRow__title {
+        width: 777px;
+    }
+    .blockRow__subtitle {
+        width: 777px;
     }
     .about__container {
         grid-template-columns: repeat(2, max-content);
