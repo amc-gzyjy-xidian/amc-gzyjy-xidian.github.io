@@ -7,7 +7,7 @@
 :root {
     /*========== Font weight ==========*/
     --font-medium: 500;
-    --font-semi-bold: 600;
+    --font-semi-bold: 800;
     --header-height: 3rem;
     --font-semi: 600;
 }
@@ -638,6 +638,7 @@ img {
 }
 
 .faculty__img {
+    position: relative;
     display: flex;
     justify-content: center;
     padding-top: .8rem;
@@ -648,10 +649,65 @@ img {
     overflow: hidden;
 }
 
+.faculty__link {
+    position: absolute;
+    bottom: -1000%;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: .5rem;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition: .3s;
+}
+
+.faculty__img:hover .faculty__link {
+    bottom: 0;
+}
+
+.faculty__link-name {
+    font-size: var(--big-font-size);
+    color: var(--first-color-lighter);
+    font-weight: var(--font-semi-bold);
+}
+
 .faculty__imgNoBackground {
-    width: 30%;
+    position: relative;
+    width: 170px;
     border-radius: 15%;
     overflow: hidden;
+}
+
+.faculty__linkImgNoBackground {
+    position: absolute;
+    bottom: -1000%;
+    width: 170px;
+    height: 200px;
+    border-radius: 15%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: .5rem;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition: .3s;
+}
+
+.faculty__imgNoBackground:hover .faculty__linkImgNoBackground {
+    bottom: 0;
+}
+
+.faculty__linkImgNoBackground-name {
+    font-size: var(--big-font-size);
+    color: var(--first-color-lighter);
+    font-weight: var(--font-semi-bold);
 }
 
 .faculty__title {
@@ -660,6 +716,7 @@ img {
     text-align: auto;
     justify-items: initial;
     font-weight: var(--font-semi);
+    display: inline-block;
 }
 
 .faculty__profession {
@@ -684,7 +741,7 @@ img {
 }
 
 .faculty__link {
-    color: var(--first-color);
+    /* color: var(--first-color); */
 }
 
 
