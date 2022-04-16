@@ -740,8 +740,22 @@ img {
     color: var(--first-color);
 }
 
-.faculty__link {
-    /* color: var(--first-color); */
+.faculty__nameLink {
+    color: var(--first-color);
+}
+
+.faculty__nameLink:hover {
+    position: relative;
+}
+
+.faculty__nameLink:hover::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    bottom: 0rem;
+    background-color: var(--first-color);
 }
 
 
