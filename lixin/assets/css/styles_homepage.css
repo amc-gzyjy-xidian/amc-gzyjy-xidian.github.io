@@ -133,8 +133,6 @@ img {
 
 /*===== CLASS CSS ===== */
 
-.section {}
-
 .section__title {
     /* position: relative; */
     font-size: var(--section-font-size);
@@ -147,7 +145,7 @@ img {
     position: relative;
     font-size: var(--big-font-size);
     color: var(--first-color);
-    margin-left: var(--mb-2);
+    /* margin-left: var(--mb-2); */
     text-align: left;
     font-weight: var(--font-semi);
 }
@@ -215,7 +213,7 @@ img {
         right: 0;
         width: 90%;
         margin: 0 auto;
-        text-align: left;
+        text-align: center;
         padding-top: 1.5rem;
         background-color: var(--first-color);
         border-radius: 1rem;
@@ -262,8 +260,8 @@ img {
         top: -110%;
         right: -70%;
         width: 30%;
-        padding: 1.5rem 0 1rem;
-        text-align: left;
+        padding: 0rem 0 1.5rem 0rem;
+        text-align: center;
         background-color: var(--first-color);
         transition: .4s;
         box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
@@ -374,6 +372,7 @@ img {
     text-align: center;
     font-size: var(--normal-font-size);
     color: var(--first-color);
+    margin-bottom: var(--mb-1);
 }
 
 .about__text {
@@ -507,13 +506,11 @@ img {
     padding: 2.5rem 1.5rem 2.5rem;
     border-radius: .5rem;
     margin-bottom: var(--mb-2);
-    /* margin-top: var(--mb-1); */
-    /* <hr size="1px" color="#eee"> */
 }
 
 .blockRow__img {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-self: left;
     width: 80%;
     border-radius: .5rem;
@@ -539,6 +536,16 @@ img {
 }
 
 .blockRow__subtitle {
+    font-size: var(--normal-font-size);
+    color: var(--dark-color);
+    margin-top: -.5rem;
+    margin-bottom: var(--mb-1);
+    display: block;
+    text-align: left;
+    font-weight: var(--font-semi);
+}
+
+.blockRow__date {
     font-size: var(--normal-font-size);
     color: var(--dark-color);
     margin-top: -.5rem;
@@ -637,6 +644,14 @@ img {
         padding-top: 2rem;
         padding-bottom: 1rem;
     }
+    .news {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .research {
+        padding-top: 7rem;
+        padding-bottom: 1rem;
+    }
     .about__container {
         align-items: center;
         text-align: center;
@@ -647,7 +662,6 @@ img {
     }
     .blockRow__img {
         width: 300px;
-        margin: auto;
     }
     .blockRow__title {
         /* margin: auto; */
@@ -669,6 +683,10 @@ img {
         height: 170px;
         margin-bottom: var(--mb-3);
     }
+    .button {
+        margin-bottom: var(--mb-1);
+        margin-top: var(--mb-1);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -686,6 +704,14 @@ img {
     }
     .section {
         padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    .news {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    .research {
+        padding-top: 5rem;
         padding-bottom: 3rem;
     }
     .nav {
@@ -724,7 +750,11 @@ img {
         width: 277px;
     }
     .about__text {
-        width: 70%;
+        width: 450px;
+    }
+    .button {
+        margin-bottom: var(--mb-0);
+        margin-top: var(--mb-0);
     }
 }
 
@@ -749,7 +779,8 @@ img {
         padding: 1rem 1rem 1rem 1rem;
     }
     .blockRow__img {
-        /* align-items: left; */
+        /* align-items: top; */
+        margin: auto;
         width: 200px;
     }
     .blockRow__detail {
@@ -764,7 +795,7 @@ img {
     .about__container {
         grid-template-columns: repeat(2, max-content);
         margin-top: var(--mb-4);
-        column-gap: 3rem;
+        column-gap: 2rem;
         align-items: center;
         text-align: initial;
         padding: 2rem 0;
@@ -774,7 +805,7 @@ img {
         width: 277px;
     }
     .about__text {
-        width: 700px;
+        width: 677px;
     }
 }
 
