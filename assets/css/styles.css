@@ -55,7 +55,7 @@
 /*========== Font and typography ==========*/
 
 :root {
-    --biggest-font-size: 3rem;
+    --biggest-font-size: 2rem;
     --big-font-size: 1.2rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -74,7 +74,7 @@
 
 @media screen and (min-width: 968px) {
      :root {
-        --biggest-font-size: 3rem;
+        --biggest-font-size: 2.5rem;
         --big-font-size: 1.2rem;
         --normal-font-size: .938rem;
         --small-font-size: .813rem;
@@ -384,19 +384,22 @@ img {
     align-content: center;
 }
 
-.islands__title {
-    font-size: var(--biggest-font-size);
-    color: var(--white-color);
+.islands__data {
+    left: 00%;
+    /* transform: translateX(-50%); */
+    padding: .25rem .5rem;
+    background-color: rgba( 70, 130, 180, 0.3);
+    border-radius: .75rem;
+    overflow: hidden;
 }
 
-.islands__subtitle {
+.islands__title {
     font-size: var(--biggest-font-size);
-    font-weight: var(--font-medium);
-    color: var(--white-color);
+    color: var(--body-color);
 }
 
 .islands__description {
-    color: var(--white-color);
+    color: var(--body-color);
     margin-bottom: 1rem;
 }
 
@@ -1130,8 +1133,8 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
     .islands__description {
-        padding-right: 5rem;
-        margin-bottom: 2rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
     }
     .islands__video {
         justify-content: center;
@@ -1167,7 +1170,6 @@ img {
     .block__container {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 2rem;
-        /* column-gap: 2rem; */
     }
 }
 
@@ -1226,8 +1228,17 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+    .islands__title {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .islands__description {
-        padding-right: 11rem;
+        /* margin-top: 1rem; */
+        padding-left: 1rem;
+        padding-right: 1rem;
+        /* margin-bottom: 1rem; */
+        /* padding-right: 1rem; */
+        margin-bottom: var(--mb-1);
     }
 }
 
