@@ -1057,10 +1057,12 @@ img {
         margin: auto;
     }
     .student__container {
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
         margin-left: var(--mb-2);
         margin-right: var(--mb-2);
+        margin-bottom: var(--mb-2);
         /* align-items: center; */
+        text-align: center;
     }
     .student__content {
         margin-left: auto;
