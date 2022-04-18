@@ -999,6 +999,9 @@ img {
     .controls__container {
         column-gap: .25rem;
     }
+    .islands__data {
+        width: 88%;
+    }
     .islands__popup-video {
         width: 230px;
         height: 100px;
