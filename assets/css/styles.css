@@ -65,12 +65,12 @@
 
 @media screen and (min-width: 320px) {
      :root {
-        --biggest-font-size: 1.5rem;
-        --biggest2-font-size: 1.3rem;
-        --big-font-size: 1.2rem;
+        --biggest-font-size: 1.2rem;
+        --biggest2-font-size: 1.2rem;
+        --big-font-size: 1.1rem;
         --normal-font-size: 1rem;
         --small-font-size: .9rem;
-        --section-font-size: 1.5rem;
+        --section-font-size: 1.2rem;
     }
 }
 
@@ -377,6 +377,7 @@ img {
 }
 
 .islands__description {
+    font-size: var(--normal-font-size);
     color: var(--body-color);
     margin-bottom: 1rem;
 }
