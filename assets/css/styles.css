@@ -358,10 +358,10 @@ img {
 
 .islands__data {
     /* left: 0; */
-    right: 100%;
+    /* right: 100%; */
     width: 71%;
     padding: .25rem .25rem;
-    background-color: rgba( 70, 130, 180, 0.3);
+    background-color: rgba( 70, 130, 180, 0.1);
     border-radius: .75rem;
     overflow: hidden;
 }
