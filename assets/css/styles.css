@@ -235,6 +235,14 @@ img {
 
 .nav__logo {
     color: var(--first-color);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    /* font-weight: var(--font-medium); */
+}
+
+.nav__logo-img {
+    width: 16rem;
 }
 
 .nav__logo:hover {
@@ -996,6 +1004,9 @@ img {
     .nav__list {
         list-style: none;
     }
+    .nav__logo-img {
+        width: 12rem;
+    }
     .controls__container {
         column-gap: .25rem;
     }
@@ -1095,6 +1106,9 @@ img {
     body {
         margin: 0;
     }
+    .nav__logo-img {
+        width: 16rem;
+    }
     .bd-container {
         margin-left: var(--mb-2);
         margin-right: var(--mb-2);
@@ -1171,6 +1185,9 @@ img {
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
+    }
+    .nav__logo-img {
+        width: 16rem;
     }
     .block__container {
         grid-template-columns: repeat(3, 1fr);
