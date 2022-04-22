@@ -245,6 +245,10 @@ img {
 
 .nav__logo {
     color: var(--first-color);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    /* font-weight: var(--font-medium); */
 }
 
 .nav__logo:hover {
@@ -639,6 +643,9 @@ img {
     .nav__list {
         list-style: none;
     }
+    .nav__logo-img {
+        width: 12rem;
+    }
     .controls__container {
         column-gap: .25rem;
     }
@@ -730,6 +737,9 @@ img {
         /* padding-left: 0; */
         list-style: none;
     }
+    .nav__logo-img {
+        width: 16rem;
+    }
     .nav__item {
         margin-left: var(--mb-4);
         margin-bottom: 0;
@@ -771,6 +781,9 @@ img {
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
+    }
+    .nav__logo-img {
+        width: 16rem;
     }
     .block__container {
         grid-template-columns: repeat(3, 1fr);
