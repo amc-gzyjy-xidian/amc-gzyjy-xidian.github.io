@@ -654,6 +654,14 @@ img {
         padding-top: 7rem;
         padding-bottom: 1rem;
     }
+    .publications {
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+    }
+    .recognitions {
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+    }
     .about__container {
         align-items: center;
         text-align: center;
