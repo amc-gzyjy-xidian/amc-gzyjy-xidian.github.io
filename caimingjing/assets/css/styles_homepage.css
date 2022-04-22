@@ -243,8 +243,17 @@ img {
     background-color: var(--first-color);
 }
 
+
+/* .nav__logo {
+    color: var(--first-color);
+} */
+
 .nav__logo {
     color: var(--first-color);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    /* font-weight: var(--font-medium); */
 }
 
 .nav__logo:hover {
@@ -636,6 +645,9 @@ img {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    .nav__logo-img {
+        width: 12rem;
+    }
     .nav__list {
         list-style: none;
     }
@@ -695,6 +707,9 @@ img {
 @media screen and (min-width: 768px) {
     body {
         margin: 0;
+    }
+    .nav__logo-img {
+        width: 16rem;
     }
     .bd-container {
         margin-left: var(--mb-1);
@@ -771,6 +786,9 @@ img {
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
+    }
+    .nav__logo-img {
+        width: 16rem;
     }
     .block__container {
         grid-template-columns: repeat(3, 1fr);
