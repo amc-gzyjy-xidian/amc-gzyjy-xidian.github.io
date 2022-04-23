@@ -1215,7 +1215,14 @@ img {
         text-align: initial;
         padding: 2rem 0;
     }
-    .faculty__img {}
+    .faculty__title {
+        width: 50%;
+        margin-left: 0rem;
+    }
+    .faculty__profession {
+        width: 50%;
+        margin-left: 0rem;
+    }
     .staff__container {
         grid-template-columns: repeat(4, 1fr);
         row-gap: 4rem;
@@ -1224,6 +1231,12 @@ img {
         text-align: initial;
         text-justify: auto;
         padding: 2rem 0;
+    }
+    .staff__title {
+        margin-left: 0rem;
+    }
+    .staff__detail {
+        margin-left: 0rem;
     }
     .student__container {
         grid-template-columns: repeat(4, 1fr);
