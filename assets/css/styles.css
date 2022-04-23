@@ -1216,11 +1216,11 @@ img {
         padding: 2rem 0;
     }
     .faculty__title {
-        width: 50%;
+        /* width: 50%; */
         margin-left: 0rem;
     }
     .faculty__profession {
-        width: 50%;
+        /* width: 50%; */
         margin-left: 0rem;
     }
     .staff__container {
