@@ -1208,23 +1208,22 @@ img {
         width: 600px;
     }
     .faculty__container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 468px);
         margin-bottom: var(--mb-4);
         column-gap: 2rem;
         align-items: center;
         text-align: initial;
         padding: 2rem 0;
+        justify-content: left;
     }
     .faculty__title {
-        /* width: 50%; */
         margin-left: 0rem;
     }
     .faculty__profession {
-        /* width: 50%; */
         margin-left: 0rem;
     }
     .staff__container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 248px);
         row-gap: 4rem;
         column-gap: 1rem;
         align-items: center;
