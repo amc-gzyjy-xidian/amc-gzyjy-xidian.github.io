@@ -646,7 +646,7 @@ img {
         margin-right: 1rem;
     }
     .nav__logo-img {
-        width: 12rem;
+        width: 13rem;
     }
     .nav__list {
         list-style: none;
@@ -709,7 +709,7 @@ img {
         margin: 0;
     }
     .nav__logo-img {
-        width: 16rem;
+        width: 15rem;
     }
     .bd-container {
         margin-left: var(--mb-1);
@@ -788,7 +788,7 @@ img {
         margin-right: auto;
     }
     .nav__logo-img {
-        width: 16rem;
+        width: 17rem;
     }
     .block__container {
         grid-template-columns: repeat(3, 1fr);
