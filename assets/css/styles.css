@@ -68,8 +68,8 @@
         --biggest-font-size: 1.2rem;
         --biggest2-font-size: 1.2rem;
         --big-font-size: 1.1rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .9rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
         --section-font-size: 1.2rem;
     }
 }
@@ -237,12 +237,8 @@ img {
     color: var(--first-color);
     display: flex;
     align-items: center;
-    column-gap: .25rem;
+    column-gap: .5rem;
     /* font-weight: var(--font-medium); */
-}
-
-.nav__logo-img {
-    width: 16rem;
 }
 
 .nav__logo:hover {
@@ -1005,7 +1001,7 @@ img {
         list-style: none;
     }
     .nav__logo-img {
-        width: 12rem;
+        width: 13rem;
     }
     .controls__container {
         column-gap: .25rem;
@@ -1107,7 +1103,7 @@ img {
         margin: 0;
     }
     .nav__logo-img {
-        width: 16rem;
+        width: 15rem;
     }
     .bd-container {
         margin-left: var(--mb-2);
@@ -1187,7 +1183,7 @@ img {
         margin-right: auto;
     }
     .nav__logo-img {
-        width: 16rem;
+        width: 17rem;
     }
     .block__container {
         grid-template-columns: repeat(3, 1fr);
@@ -1209,7 +1205,7 @@ img {
         width: 250px;
     }
     .blockRow__detail {
-        width: 700px;
+        width: 600px;
     }
     .faculty__container {
         grid-template-columns: repeat(2, 1fr);
@@ -1219,6 +1215,7 @@ img {
         text-align: initial;
         padding: 2rem 0;
     }
+    .faculty__img {}
     .staff__container {
         grid-template-columns: repeat(4, 1fr);
         row-gap: 4rem;
@@ -1239,6 +1236,12 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+    .nav__logo-short {
+        width: 3rem;
+    }
+    .nav__logo-img {
+        width: 17rem;
+    }
     .islands__data {
         width: 70%;
     }
@@ -1256,6 +1259,13 @@ img {
         padding-left: .5rem;
         padding-right: .5rem;
         margin-bottom: var(--mb-1);
+    }
+    .blockRow__img {
+        /* margin: auto; */
+        width: 250px;
+    }
+    .blockRow__detail {
+        width: 700px;
     }
 }
 
