@@ -644,7 +644,7 @@ img {
         list-style: none;
     }
     .nav__logo-img {
-        width: 12rem;
+        width: 13rem;
     }
     .controls__container {
         column-gap: .25rem;
@@ -725,7 +725,7 @@ img {
         margin-right: var(--mb-2);
     }
     .nav__logo-img {
-        width: 16rem;
+        width: 15rem;
     }
     .section {
         padding-top: 4rem;
@@ -791,7 +791,7 @@ img {
         margin-right: auto;
     }
     .nav__logo-img {
-        width: 16rem;
+        width: 17rem;
     }
     .block__container {
         grid-template-columns: repeat(3, 1fr);
