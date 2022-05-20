@@ -164,8 +164,8 @@ img {
 .bd-container {
     max-width: 1200px;
     width: calc(100% - 2rem);
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
+    /* margin-left: var(--mb-1); */
+    /* margin-right: var(--mb-1); */
 }
 
 .bd-grid {
@@ -1085,7 +1085,7 @@ img {
         height: calc(var(--header-height) + 0.25rem);
     }
     .nav__logo-img {
-        width: 20rem;
+        width: 19rem;
     }
     .controls__container {
         column-gap: .25rem;
