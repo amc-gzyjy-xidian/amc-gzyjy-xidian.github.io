@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+
+
+
+
 /*===== VARIABLES CSS =====*/
 
 :root {
@@ -64,7 +68,7 @@
 }
 
 @media screen and (min-width: 320px) {
-     :root {
+    :root {
         --biggest-font-size: 1.2rem;
         --biggest2-font-size: 1.2rem;
         --big-font-size: 1.1rem;
@@ -75,7 +79,7 @@
 }
 
 @media screen and (min-width: 992px) {
-     :root {
+    :root {
         --biggest-font-size: 2rem;
         --biggest2-font-size: 1.7rem;
         --big-font-size: 1.2rem;
@@ -89,8 +93,8 @@
 /*===== BASE =====*/
 
 *,
- ::before,
- ::after {
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -374,7 +378,7 @@ img {
 
 .islands__data {
     padding: .25rem .25rem;
-    background-color: rgba( 70, 130, 180, 0.1);
+    background-color: rgba(70, 130, 180, 0.1);
     border-radius: .5rem;
     overflow: hidden;
 }
@@ -1038,7 +1042,44 @@ img {
     padding: .5rem 0;
     justify-content: center;
 }
+/* ==== FOOTER ==== */
+.footer{
+    position: relative;
+}
 
+.footer .friendship__link i{
+    font-style: normal;
+    width: 100px;
+}
+
+.footer .friendship__link i::before{
+    content: "";
+    width: calc(50% - 50px);
+    height: 7px;
+    background: url(../img/footer/footer-06.png) no-repeat left center;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    margin-top: -3px;
+}
+.footer .friendship__link i::after{
+    content: "";
+    width: calc(50% - 50px);
+    height: 7px;
+    background: url(../img/footer/footer-05.png) no-repeat right center;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    margin-top: -3px;
+}
+.friendship__link ul li a{
+    font-size: 14px;
+    color: #af7c7dd2;
+}
+.friendship__link ul li a:hover{
+    font-size: 14px;
+    color: #fff;
+}
 
 /* .footer__text {
     font-size: var(--small-font-size);
@@ -1055,6 +1096,7 @@ img {
 
 .footer__copy {
     font-size: var(--small-font-size);
+    color: #b4a4a4;
 }
 
 .footer__img {
@@ -1077,62 +1119,79 @@ img {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     .bd-grid {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     .nav {
         height: calc(var(--header-height) + 0.25rem);
     }
+
     .nav__logo-img {
         width: 17rem;
     }
+
     .controls__container {
         column-gap: .25rem;
     }
+
     .islands__data {
         width: 88%;
     }
+
     .islands__popup-video {
         width: 230px;
         height: 100px;
     }
+
     .section {
         padding-top: 2rem;
         padding-bottom: 1rem;
     }
+
     .faculty__container {
         /* align-items: center; */
         text-align: center;
     }
+
     .faculty__profession {
         margin: auto;
     }
+
     .faculty__title {
         margin: auto;
     }
+
     .faculty__text {
         text-align: left;
         margin: auto;
     }
+
     .faculty__imgNoBackground {
         width: 170px;
         margin: auto;
     }
+
     .staff__container {
         /* align-items: center; */
         text-align: center;
     }
+
     .staff__detail {
         margin: auto;
     }
+
     .staff__img {
         margin: auto;
     }
+
     .staff__imgNoBackground {
         width: 100px;
         margin: auto;
     }
+
     .student__container {
         /* grid-template-columns: repeat(2, 1fr); */
         margin-left: var(--mb-2);
@@ -1141,41 +1200,51 @@ img {
         /* align-items: center; */
         text-align: center;
     }
+
     .student__content {
         margin-left: auto;
         margin-right: auto;
     }
+
     .student__img {
         /* width: 100px; */
         height: 120px;
         margin-top: var(--mb-2);
     }
+
     .blockRow__img {
         width: 300px;
         margin-bottom: 2rem;
         margin: auto;
     }
+
     .blockRow__title {
         /* margin: auto; */
         text-align: auto;
     }
+
     .blockRow__date {
         text-align: auto;
     }
+
     .block__date {
         text-align: auto;
     }
+
     .block__title {
         text-align: auto;
     }
+
     .block__detail {
         text-align: left;
     }
+
     .block__img {
         /* width: 300px; */
         height: 170px;
         margin-bottom: var(--mb-3);
     }
+
     .button {
         margin-top: var(--mb-1);
         margin: auto;
@@ -1186,33 +1255,41 @@ img {
     body {
         margin: 0;
     }
+
     .bd-container {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     .bd-grid {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     .nav {
         height: calc(var(--header-height) + 1rem);
     }
+
     .nav__logo-img {
         width: 29rem;
     }
+
     .bd-container {
         margin-left: var(--mb-2);
         margin-right: var(--mb-2);
     }
+
     .bd-grid {
         width: calc(100% - 2rem);
         margin-left: var(--mb-2);
         margin-right: var(--mb-2);
     }
+
     .section {
         padding-top: 4rem;
         padding-bottom: 3rem;
     }
+
     /* .nav {
         height: calc(var(--header-height) + 1.5rem);
     }
@@ -1231,41 +1308,51 @@ img {
     .islands__container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .islands__description {
         padding-left: .5rem;
         padding-right: .5rem;
     }
+
     .islands__video {
         justify-content: center;
         align-items: center;
         padding: 0;
     }
+
     .islands__video-icon {
         font-size: 3rem;
     }
+
     .islands__popup-video {
         width: 500px;
         height: 250px;
     }
+
     .islands__popup-close {
         font-size: 1.5rem;
     }
+
     .controls {
         padding: .5rem;
         border-radius: 1.25rem;
     }
+
     .controls__container {
         column-gap: 1.5rem;
     }
+
     .controls__img {
         width: 45px;
         height: 45px;
         border-radius: .75rem;
     }
+
     .swiper-slide-thumb-active {
         width: 55px;
         height: 55px;
     }
+
     .block__container {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 2rem;
@@ -1277,36 +1364,45 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+
     .nav__logo-img {
         width: 29rem;
     }
+
     .nav {
         height: calc(var(--header-height) + 1rem);
     }
+
     .nav__list {
         display: flex;
         padding-top: 0;
         /* padding-bottom: 0; */
         list-style: none;
     }
+
     .nav__item {
         margin-left: var(--mb-4);
         margin-bottom: 0;
     }
+
     .nav__toggle {
         display: none;
     }
+
     .block__container {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 1.5rem;
     }
+
     .block__content {
         padding: 1rem;
     }
+
     .research__container {
         grid-template-columns: repeat(1, 1fr);
         /* column-gap: 2.5rem; */
     }
+
     /* .block__content {
         padding: 1rem;
     } */
@@ -1318,13 +1414,16 @@ img {
         padding: 3rem 0;
         /* border-radius: 3rem; */
     }
+
     .blockRow__img {
         /* margin: auto; */
         width: 250px;
     }
+
     .blockRow__detail {
         width: 600px;
     }
+
     .faculty__container {
         grid-template-columns: repeat(2, 468px);
         margin-bottom: var(--mb-4);
@@ -1336,6 +1435,7 @@ img {
         padding: 2rem 20rem 20rem 0rem;
         /* justify-content: left; */
     }
+
     /* .faculty__title {
         margin-left: 0rem;
     }
@@ -1353,6 +1453,7 @@ img {
         padding: 2rem 0rem 0rem 0rem;
         /* padding: 2rem; */
     }
+
     /* .staff__title {
         margin-left: 0rem;
     }
@@ -1370,34 +1471,42 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+
     .nav__logo-short {
         width: 3rem;
     }
+
     .nav__logo-img {
         width: 29rem;
     }
+
     .islands__data {
         width: 70%;
     }
+
     .islands__title {
         padding-left: .5rem;
         padding-right: .5rem;
         padding-bottom: var(--mb-2);
     }
+
     .islands__subtitle {
         margin-bottom: var(--mb-2);
         padding-left: .5rem;
         padding-right: .5rem;
     }
+
     .islands__description {
         padding-left: .5rem;
         padding-right: .5rem;
         margin-bottom: var(--mb-1);
     }
+
     .blockRow__img {
         /* margin: auto; */
         width: 250px;
     }
+
     .blockRow__detail {
         width: 700px;
     }
