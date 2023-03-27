@@ -602,6 +602,9 @@ img {
     /* margin-top: var(--mb-2); */
     /* margin-bottom: auto; */
 }
+video{
+    width: 250px;
+}
 
 .blockRow__detail {
     font-size: var(--normal-font-size);
